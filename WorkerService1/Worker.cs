@@ -1,6 +1,6 @@
-using ServiceReference1;
+using Sfc.TestDataCollection;
 
-namespace WorkerService1
+namespace ServiceReferenceTest
 {
     public class Worker : BackgroundService
     {

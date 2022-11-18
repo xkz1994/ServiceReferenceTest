@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace ServiceReference1
+namespace Sfc.TestDataCollection
 {
     using System.Runtime.Serialization;
     
@@ -65,42 +65,86 @@ namespace ServiceReference1
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="ServiceReference1.TestDataCollectionSoap")]
+    [System.ServiceModel.ServiceContractAttribute(ConfigurationName="Sfc.TestDataCollection.TestDataCollectionSoap")]
     public interface TestDataCollectionSoap
     {
         
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 HelloWorldResult 未标记为 nillable
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.HelloWorldResponse> HelloWorldAsync(ServiceReference1.HelloWorldRequest request);
+        Sfc.TestDataCollection.HelloWorldResponse HelloWorld(Sfc.TestDataCollection.HelloWorldRequest request);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/HelloWorld", ReplyAction="*")]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.HelloWorldResponse> HelloWorldAsync(Sfc.TestDataCollection.HelloWorldRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 TestResult 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Test", ReplyAction="*")]
+        Sfc.TestDataCollection.TestResponse Test(Sfc.TestDataCollection.TestRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/Test", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.TestResponse> TestAsync(ServiceReference1.TestRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.TestResponse> TestAsync(Sfc.TestDataCollection.TestRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 lotNo 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/BondLotNoAndSn", ReplyAction="*")]
+        Sfc.TestDataCollection.BondLotNoAndSnResponse BondLotNoAndSn(Sfc.TestDataCollection.BondLotNoAndSnRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/BondLotNoAndSn", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.BondLotNoAndSnResponse> BondLotNoAndSnAsync(ServiceReference1.BondLotNoAndSnRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.BondLotNoAndSnResponse> BondLotNoAndSnAsync(Sfc.TestDataCollection.BondLotNoAndSnRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 lotNo 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/BondLotNoAndSnOld", ReplyAction="*")]
+        Sfc.TestDataCollection.BondLotNoAndSnOldResponse BondLotNoAndSnOld(Sfc.TestDataCollection.BondLotNoAndSnOldRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/BondLotNoAndSnOld", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.BondLotNoAndSnOldResponse> BondLotNoAndSnOldAsync(ServiceReference1.BondLotNoAndSnOldRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.BondLotNoAndSnOldResponse> BondLotNoAndSnOldAsync(Sfc.TestDataCollection.BondLotNoAndSnOldRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 dataString 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EndTestDataTransfer", ReplyAction="*")]
+        Sfc.TestDataCollection.EndTestDataTransferResponse EndTestDataTransfer(Sfc.TestDataCollection.EndTestDataTransferRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/EndTestDataTransfer", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.EndTestDataTransferResponse> EndTestDataTransferAsync(ServiceReference1.EndTestDataTransferRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.EndTestDataTransferResponse> EndTestDataTransferAsync(Sfc.TestDataCollection.EndTestDataTransferRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 sn 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/BondSensorId", ReplyAction="*")]
+        Sfc.TestDataCollection.BondSensorIdResponse BondSensorId(Sfc.TestDataCollection.BondSensorIdRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/BondSensorId", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.BondSensorIdResponse> BondSensorIdAsync(ServiceReference1.BondSensorIdRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.BondSensorIdResponse> BondSensorIdAsync(Sfc.TestDataCollection.BondSensorIdRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 sensorId 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ValidIsComplete", ReplyAction="*")]
+        Sfc.TestDataCollection.ValidIsCompleteResponse ValidIsComplete(Sfc.TestDataCollection.ValidIsCompleteRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ValidIsComplete", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.ValidIsCompleteResponse> ValidIsCompleteAsync(ServiceReference1.ValidIsCompleteRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.ValidIsCompleteResponse> ValidIsCompleteAsync(Sfc.TestDataCollection.ValidIsCompleteRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 sensorId 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ValidIsCompleteNew", ReplyAction="*")]
+        Sfc.TestDataCollection.ValidIsCompleteNewResponse ValidIsCompleteNew(Sfc.TestDataCollection.ValidIsCompleteNewRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ValidIsCompleteNew", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.ValidIsCompleteNewResponse> ValidIsCompleteNewAsync(ServiceReference1.ValidIsCompleteNewRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.ValidIsCompleteNewResponse> ValidIsCompleteNewAsync(Sfc.TestDataCollection.ValidIsCompleteNewRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 testData 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestDataStorage", ReplyAction="*")]
+        Sfc.TestDataCollection.TestDataStorageResponse TestDataStorage(Sfc.TestDataCollection.TestDataStorageRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestDataStorage", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.TestDataStorageResponse> TestDataStorageAsync(ServiceReference1.TestDataStorageRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.TestDataStorageResponse> TestDataStorageAsync(Sfc.TestDataCollection.TestDataStorageRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 testData 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestDataStorageTest", ReplyAction="*")]
+        Sfc.TestDataCollection.TestDataStorageTestResponse TestDataStorageTest(Sfc.TestDataCollection.TestDataStorageTestRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/TestDataStorageTest", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.TestDataStorageTestResponse> TestDataStorageTestAsync(ServiceReference1.TestDataStorageTestRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.TestDataStorageTestResponse> TestDataStorageTestAsync(Sfc.TestDataCollection.TestDataStorageTestRequest request);
+        
+        // CODEGEN: 正在生成消息协定，因为命名空间 http://tempuri.org/ 的元素名称 GetCraftInfoResult 未标记为 nillable
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCraftInfo", ReplyAction="*")]
+        Sfc.TestDataCollection.GetCraftInfoResponse GetCraftInfo(Sfc.TestDataCollection.GetCraftInfoRequest request);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/GetCraftInfo", ReplyAction="*")]
-        System.Threading.Tasks.Task<ServiceReference1.GetCraftInfoResponse> GetCraftInfoAsync(ServiceReference1.GetCraftInfoRequest request);
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.GetCraftInfoResponse> GetCraftInfoAsync(Sfc.TestDataCollection.GetCraftInfoRequest request);
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -111,13 +155,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorld", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.HelloWorldRequestBody Body;
+        public Sfc.TestDataCollection.HelloWorldRequestBody Body;
         
         public HelloWorldRequest()
         {
         }
         
-        public HelloWorldRequest(ServiceReference1.HelloWorldRequestBody Body)
+        public HelloWorldRequest(Sfc.TestDataCollection.HelloWorldRequestBody Body)
         {
             this.Body = Body;
         }
@@ -143,13 +187,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="HelloWorldResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.HelloWorldResponseBody Body;
+        public Sfc.TestDataCollection.HelloWorldResponseBody Body;
         
         public HelloWorldResponse()
         {
         }
         
-        public HelloWorldResponse(ServiceReference1.HelloWorldResponseBody Body)
+        public HelloWorldResponse(Sfc.TestDataCollection.HelloWorldResponseBody Body)
         {
             this.Body = Body;
         }
@@ -183,13 +227,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="Test", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.TestRequestBody Body;
+        public Sfc.TestDataCollection.TestRequestBody Body;
         
         public TestRequest()
         {
         }
         
-        public TestRequest(ServiceReference1.TestRequestBody Body)
+        public TestRequest(Sfc.TestDataCollection.TestRequestBody Body)
         {
             this.Body = Body;
         }
@@ -215,13 +259,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TestResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.TestResponseBody Body;
+        public Sfc.TestDataCollection.TestResponseBody Body;
         
         public TestResponse()
         {
         }
         
-        public TestResponse(ServiceReference1.TestResponseBody Body)
+        public TestResponse(Sfc.TestDataCollection.TestResponseBody Body)
         {
             this.Body = Body;
         }
@@ -235,13 +279,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo TestResult;
+        public Sfc.TestDataCollection.APIBackInfo TestResult;
         
         public TestResponseBody()
         {
         }
         
-        public TestResponseBody(ServiceReference1.APIBackInfo TestResult)
+        public TestResponseBody(Sfc.TestDataCollection.APIBackInfo TestResult)
         {
             this.TestResult = TestResult;
         }
@@ -255,13 +299,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BondLotNoAndSn", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.BondLotNoAndSnRequestBody Body;
+        public Sfc.TestDataCollection.BondLotNoAndSnRequestBody Body;
         
         public BondLotNoAndSnRequest()
         {
         }
         
-        public BondLotNoAndSnRequest(ServiceReference1.BondLotNoAndSnRequestBody Body)
+        public BondLotNoAndSnRequest(Sfc.TestDataCollection.BondLotNoAndSnRequestBody Body)
         {
             this.Body = Body;
         }
@@ -303,13 +347,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BondLotNoAndSnResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.BondLotNoAndSnResponseBody Body;
+        public Sfc.TestDataCollection.BondLotNoAndSnResponseBody Body;
         
         public BondLotNoAndSnResponse()
         {
         }
         
-        public BondLotNoAndSnResponse(ServiceReference1.BondLotNoAndSnResponseBody Body)
+        public BondLotNoAndSnResponse(Sfc.TestDataCollection.BondLotNoAndSnResponseBody Body)
         {
             this.Body = Body;
         }
@@ -323,13 +367,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo BondLotNoAndSnResult;
+        public Sfc.TestDataCollection.APIBackInfo BondLotNoAndSnResult;
         
         public BondLotNoAndSnResponseBody()
         {
         }
         
-        public BondLotNoAndSnResponseBody(ServiceReference1.APIBackInfo BondLotNoAndSnResult)
+        public BondLotNoAndSnResponseBody(Sfc.TestDataCollection.APIBackInfo BondLotNoAndSnResult)
         {
             this.BondLotNoAndSnResult = BondLotNoAndSnResult;
         }
@@ -343,13 +387,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BondLotNoAndSnOld", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.BondLotNoAndSnOldRequestBody Body;
+        public Sfc.TestDataCollection.BondLotNoAndSnOldRequestBody Body;
         
         public BondLotNoAndSnOldRequest()
         {
         }
         
-        public BondLotNoAndSnOldRequest(ServiceReference1.BondLotNoAndSnOldRequestBody Body)
+        public BondLotNoAndSnOldRequest(Sfc.TestDataCollection.BondLotNoAndSnOldRequestBody Body)
         {
             this.Body = Body;
         }
@@ -391,13 +435,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BondLotNoAndSnOldResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.BondLotNoAndSnOldResponseBody Body;
+        public Sfc.TestDataCollection.BondLotNoAndSnOldResponseBody Body;
         
         public BondLotNoAndSnOldResponse()
         {
         }
         
-        public BondLotNoAndSnOldResponse(ServiceReference1.BondLotNoAndSnOldResponseBody Body)
+        public BondLotNoAndSnOldResponse(Sfc.TestDataCollection.BondLotNoAndSnOldResponseBody Body)
         {
             this.Body = Body;
         }
@@ -411,13 +455,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo BondLotNoAndSnOldResult;
+        public Sfc.TestDataCollection.APIBackInfo BondLotNoAndSnOldResult;
         
         public BondLotNoAndSnOldResponseBody()
         {
         }
         
-        public BondLotNoAndSnOldResponseBody(ServiceReference1.APIBackInfo BondLotNoAndSnOldResult)
+        public BondLotNoAndSnOldResponseBody(Sfc.TestDataCollection.APIBackInfo BondLotNoAndSnOldResult)
         {
             this.BondLotNoAndSnOldResult = BondLotNoAndSnOldResult;
         }
@@ -431,13 +475,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="EndTestDataTransfer", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.EndTestDataTransferRequestBody Body;
+        public Sfc.TestDataCollection.EndTestDataTransferRequestBody Body;
         
         public EndTestDataTransferRequest()
         {
         }
         
-        public EndTestDataTransferRequest(ServiceReference1.EndTestDataTransferRequestBody Body)
+        public EndTestDataTransferRequest(Sfc.TestDataCollection.EndTestDataTransferRequestBody Body)
         {
             this.Body = Body;
         }
@@ -475,13 +519,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="EndTestDataTransferResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.EndTestDataTransferResponseBody Body;
+        public Sfc.TestDataCollection.EndTestDataTransferResponseBody Body;
         
         public EndTestDataTransferResponse()
         {
         }
         
-        public EndTestDataTransferResponse(ServiceReference1.EndTestDataTransferResponseBody Body)
+        public EndTestDataTransferResponse(Sfc.TestDataCollection.EndTestDataTransferResponseBody Body)
         {
             this.Body = Body;
         }
@@ -495,13 +539,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo EndTestDataTransferResult;
+        public Sfc.TestDataCollection.APIBackInfo EndTestDataTransferResult;
         
         public EndTestDataTransferResponseBody()
         {
         }
         
-        public EndTestDataTransferResponseBody(ServiceReference1.APIBackInfo EndTestDataTransferResult)
+        public EndTestDataTransferResponseBody(Sfc.TestDataCollection.APIBackInfo EndTestDataTransferResult)
         {
             this.EndTestDataTransferResult = EndTestDataTransferResult;
         }
@@ -515,13 +559,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BondSensorId", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.BondSensorIdRequestBody Body;
+        public Sfc.TestDataCollection.BondSensorIdRequestBody Body;
         
         public BondSensorIdRequest()
         {
         }
         
-        public BondSensorIdRequest(ServiceReference1.BondSensorIdRequestBody Body)
+        public BondSensorIdRequest(Sfc.TestDataCollection.BondSensorIdRequestBody Body)
         {
             this.Body = Body;
         }
@@ -563,13 +607,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="BondSensorIdResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.BondSensorIdResponseBody Body;
+        public Sfc.TestDataCollection.BondSensorIdResponseBody Body;
         
         public BondSensorIdResponse()
         {
         }
         
-        public BondSensorIdResponse(ServiceReference1.BondSensorIdResponseBody Body)
+        public BondSensorIdResponse(Sfc.TestDataCollection.BondSensorIdResponseBody Body)
         {
             this.Body = Body;
         }
@@ -583,13 +627,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo BondSensorIdResult;
+        public Sfc.TestDataCollection.APIBackInfo BondSensorIdResult;
         
         public BondSensorIdResponseBody()
         {
         }
         
-        public BondSensorIdResponseBody(ServiceReference1.APIBackInfo BondSensorIdResult)
+        public BondSensorIdResponseBody(Sfc.TestDataCollection.APIBackInfo BondSensorIdResult)
         {
             this.BondSensorIdResult = BondSensorIdResult;
         }
@@ -603,13 +647,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidIsComplete", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.ValidIsCompleteRequestBody Body;
+        public Sfc.TestDataCollection.ValidIsCompleteRequestBody Body;
         
         public ValidIsCompleteRequest()
         {
         }
         
-        public ValidIsCompleteRequest(ServiceReference1.ValidIsCompleteRequestBody Body)
+        public ValidIsCompleteRequest(Sfc.TestDataCollection.ValidIsCompleteRequestBody Body)
         {
             this.Body = Body;
         }
@@ -647,13 +691,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidIsCompleteResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.ValidIsCompleteResponseBody Body;
+        public Sfc.TestDataCollection.ValidIsCompleteResponseBody Body;
         
         public ValidIsCompleteResponse()
         {
         }
         
-        public ValidIsCompleteResponse(ServiceReference1.ValidIsCompleteResponseBody Body)
+        public ValidIsCompleteResponse(Sfc.TestDataCollection.ValidIsCompleteResponseBody Body)
         {
             this.Body = Body;
         }
@@ -667,13 +711,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo ValidIsCompleteResult;
+        public Sfc.TestDataCollection.APIBackInfo ValidIsCompleteResult;
         
         public ValidIsCompleteResponseBody()
         {
         }
         
-        public ValidIsCompleteResponseBody(ServiceReference1.APIBackInfo ValidIsCompleteResult)
+        public ValidIsCompleteResponseBody(Sfc.TestDataCollection.APIBackInfo ValidIsCompleteResult)
         {
             this.ValidIsCompleteResult = ValidIsCompleteResult;
         }
@@ -687,13 +731,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidIsCompleteNew", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.ValidIsCompleteNewRequestBody Body;
+        public Sfc.TestDataCollection.ValidIsCompleteNewRequestBody Body;
         
         public ValidIsCompleteNewRequest()
         {
         }
         
-        public ValidIsCompleteNewRequest(ServiceReference1.ValidIsCompleteNewRequestBody Body)
+        public ValidIsCompleteNewRequest(Sfc.TestDataCollection.ValidIsCompleteNewRequestBody Body)
         {
             this.Body = Body;
         }
@@ -731,13 +775,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="ValidIsCompleteNewResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.ValidIsCompleteNewResponseBody Body;
+        public Sfc.TestDataCollection.ValidIsCompleteNewResponseBody Body;
         
         public ValidIsCompleteNewResponse()
         {
         }
         
-        public ValidIsCompleteNewResponse(ServiceReference1.ValidIsCompleteNewResponseBody Body)
+        public ValidIsCompleteNewResponse(Sfc.TestDataCollection.ValidIsCompleteNewResponseBody Body)
         {
             this.Body = Body;
         }
@@ -751,13 +795,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo ValidIsCompleteNewResult;
+        public Sfc.TestDataCollection.APIBackInfo ValidIsCompleteNewResult;
         
         public ValidIsCompleteNewResponseBody()
         {
         }
         
-        public ValidIsCompleteNewResponseBody(ServiceReference1.APIBackInfo ValidIsCompleteNewResult)
+        public ValidIsCompleteNewResponseBody(Sfc.TestDataCollection.APIBackInfo ValidIsCompleteNewResult)
         {
             this.ValidIsCompleteNewResult = ValidIsCompleteNewResult;
         }
@@ -771,13 +815,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TestDataStorage", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.TestDataStorageRequestBody Body;
+        public Sfc.TestDataCollection.TestDataStorageRequestBody Body;
         
         public TestDataStorageRequest()
         {
         }
         
-        public TestDataStorageRequest(ServiceReference1.TestDataStorageRequestBody Body)
+        public TestDataStorageRequest(Sfc.TestDataCollection.TestDataStorageRequestBody Body)
         {
             this.Body = Body;
         }
@@ -831,13 +875,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TestDataStorageResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.TestDataStorageResponseBody Body;
+        public Sfc.TestDataCollection.TestDataStorageResponseBody Body;
         
         public TestDataStorageResponse()
         {
         }
         
-        public TestDataStorageResponse(ServiceReference1.TestDataStorageResponseBody Body)
+        public TestDataStorageResponse(Sfc.TestDataCollection.TestDataStorageResponseBody Body)
         {
             this.Body = Body;
         }
@@ -851,13 +895,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo TestDataStorageResult;
+        public Sfc.TestDataCollection.APIBackInfo TestDataStorageResult;
         
         public TestDataStorageResponseBody()
         {
         }
         
-        public TestDataStorageResponseBody(ServiceReference1.APIBackInfo TestDataStorageResult)
+        public TestDataStorageResponseBody(Sfc.TestDataCollection.APIBackInfo TestDataStorageResult)
         {
             this.TestDataStorageResult = TestDataStorageResult;
         }
@@ -871,13 +915,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TestDataStorageTest", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.TestDataStorageTestRequestBody Body;
+        public Sfc.TestDataCollection.TestDataStorageTestRequestBody Body;
         
         public TestDataStorageTestRequest()
         {
         }
         
-        public TestDataStorageTestRequest(ServiceReference1.TestDataStorageTestRequestBody Body)
+        public TestDataStorageTestRequest(Sfc.TestDataCollection.TestDataStorageTestRequestBody Body)
         {
             this.Body = Body;
         }
@@ -911,13 +955,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="TestDataStorageTestResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.TestDataStorageTestResponseBody Body;
+        public Sfc.TestDataCollection.TestDataStorageTestResponseBody Body;
         
         public TestDataStorageTestResponse()
         {
         }
         
-        public TestDataStorageTestResponse(ServiceReference1.TestDataStorageTestResponseBody Body)
+        public TestDataStorageTestResponse(Sfc.TestDataCollection.TestDataStorageTestResponseBody Body)
         {
             this.Body = Body;
         }
@@ -931,13 +975,13 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo TestDataStorageTestResult;
+        public Sfc.TestDataCollection.APIBackInfo TestDataStorageTestResult;
         
         public TestDataStorageTestResponseBody()
         {
         }
         
-        public TestDataStorageTestResponseBody(ServiceReference1.APIBackInfo TestDataStorageTestResult)
+        public TestDataStorageTestResponseBody(Sfc.TestDataCollection.APIBackInfo TestDataStorageTestResult)
         {
             this.TestDataStorageTestResult = TestDataStorageTestResult;
         }
@@ -951,13 +995,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCraftInfo", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.GetCraftInfoRequestBody Body;
+        public Sfc.TestDataCollection.GetCraftInfoRequestBody Body;
         
         public GetCraftInfoRequest()
         {
         }
         
-        public GetCraftInfoRequest(ServiceReference1.GetCraftInfoRequestBody Body)
+        public GetCraftInfoRequest(Sfc.TestDataCollection.GetCraftInfoRequestBody Body)
         {
             this.Body = Body;
         }
@@ -983,13 +1027,13 @@ namespace ServiceReference1
     {
         
         [System.ServiceModel.MessageBodyMemberAttribute(Name="GetCraftInfoResponse", Namespace="http://tempuri.org/", Order=0)]
-        public ServiceReference1.GetCraftInfoResponseBody Body;
+        public Sfc.TestDataCollection.GetCraftInfoResponseBody Body;
         
         public GetCraftInfoResponse()
         {
         }
         
-        public GetCraftInfoResponse(ServiceReference1.GetCraftInfoResponseBody Body)
+        public GetCraftInfoResponse(Sfc.TestDataCollection.GetCraftInfoResponseBody Body)
         {
             this.Body = Body;
         }
@@ -1003,26 +1047,26 @@ namespace ServiceReference1
     {
         
         [System.Runtime.Serialization.DataMemberAttribute(EmitDefaultValue=false, Order=0)]
-        public ServiceReference1.APIBackInfo GetCraftInfoResult;
+        public Sfc.TestDataCollection.APIBackInfo GetCraftInfoResult;
         
         public GetCraftInfoResponseBody()
         {
         }
         
-        public GetCraftInfoResponseBody(ServiceReference1.APIBackInfo GetCraftInfoResult)
+        public GetCraftInfoResponseBody(Sfc.TestDataCollection.APIBackInfo GetCraftInfoResult)
         {
             this.GetCraftInfoResult = GetCraftInfoResult;
         }
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public interface TestDataCollectionSoapChannel : ServiceReference1.TestDataCollectionSoap, System.ServiceModel.IClientChannel
+    public interface TestDataCollectionSoapChannel : Sfc.TestDataCollection.TestDataCollectionSoap, System.ServiceModel.IClientChannel
     {
     }
     
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.1.0")]
-    public partial class TestDataCollectionSoapClient : System.ServiceModel.ClientBase<ServiceReference1.TestDataCollectionSoap>, ServiceReference1.TestDataCollectionSoap
+    public partial class TestDataCollectionSoapClient : System.ServiceModel.ClientBase<Sfc.TestDataCollection.TestDataCollectionSoap>, Sfc.TestDataCollection.TestDataCollectionSoap
     {
         
         /// <summary>
@@ -1059,168 +1103,344 @@ namespace ServiceReference1
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.HelloWorldResponse> ServiceReference1.TestDataCollectionSoap.HelloWorldAsync(ServiceReference1.HelloWorldRequest request)
+        Sfc.TestDataCollection.HelloWorldResponse Sfc.TestDataCollection.TestDataCollectionSoap.HelloWorld(Sfc.TestDataCollection.HelloWorldRequest request)
+        {
+            return base.Channel.HelloWorld(request);
+        }
+        
+        public string HelloWorld()
+        {
+            Sfc.TestDataCollection.HelloWorldRequest inValue = new Sfc.TestDataCollection.HelloWorldRequest();
+            inValue.Body = new Sfc.TestDataCollection.HelloWorldRequestBody();
+            Sfc.TestDataCollection.HelloWorldResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).HelloWorld(inValue);
+            return retVal.Body.HelloWorldResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.HelloWorldResponse> Sfc.TestDataCollection.TestDataCollectionSoap.HelloWorldAsync(Sfc.TestDataCollection.HelloWorldRequest request)
         {
             return base.Channel.HelloWorldAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.HelloWorldResponse> HelloWorldAsync()
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.HelloWorldResponse> HelloWorldAsync()
         {
-            ServiceReference1.HelloWorldRequest inValue = new ServiceReference1.HelloWorldRequest();
-            inValue.Body = new ServiceReference1.HelloWorldRequestBody();
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).HelloWorldAsync(inValue);
+            Sfc.TestDataCollection.HelloWorldRequest inValue = new Sfc.TestDataCollection.HelloWorldRequest();
+            inValue.Body = new Sfc.TestDataCollection.HelloWorldRequestBody();
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).HelloWorldAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.TestResponse> ServiceReference1.TestDataCollectionSoap.TestAsync(ServiceReference1.TestRequest request)
+        Sfc.TestDataCollection.TestResponse Sfc.TestDataCollection.TestDataCollectionSoap.Test(Sfc.TestDataCollection.TestRequest request)
+        {
+            return base.Channel.Test(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo Test()
+        {
+            Sfc.TestDataCollection.TestRequest inValue = new Sfc.TestDataCollection.TestRequest();
+            inValue.Body = new Sfc.TestDataCollection.TestRequestBody();
+            Sfc.TestDataCollection.TestResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).Test(inValue);
+            return retVal.Body.TestResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.TestResponse> Sfc.TestDataCollection.TestDataCollectionSoap.TestAsync(Sfc.TestDataCollection.TestRequest request)
         {
             return base.Channel.TestAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.TestResponse> TestAsync()
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.TestResponse> TestAsync()
         {
-            ServiceReference1.TestRequest inValue = new ServiceReference1.TestRequest();
-            inValue.Body = new ServiceReference1.TestRequestBody();
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).TestAsync(inValue);
+            Sfc.TestDataCollection.TestRequest inValue = new Sfc.TestDataCollection.TestRequest();
+            inValue.Body = new Sfc.TestDataCollection.TestRequestBody();
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).TestAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.BondLotNoAndSnResponse> ServiceReference1.TestDataCollectionSoap.BondLotNoAndSnAsync(ServiceReference1.BondLotNoAndSnRequest request)
+        Sfc.TestDataCollection.BondLotNoAndSnResponse Sfc.TestDataCollection.TestDataCollectionSoap.BondLotNoAndSn(Sfc.TestDataCollection.BondLotNoAndSnRequest request)
+        {
+            return base.Channel.BondLotNoAndSn(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo BondLotNoAndSn(string lotNo, string sn, string procedure)
+        {
+            Sfc.TestDataCollection.BondLotNoAndSnRequest inValue = new Sfc.TestDataCollection.BondLotNoAndSnRequest();
+            inValue.Body = new Sfc.TestDataCollection.BondLotNoAndSnRequestBody();
+            inValue.Body.lotNo = lotNo;
+            inValue.Body.sn = sn;
+            inValue.Body.procedure = procedure;
+            Sfc.TestDataCollection.BondLotNoAndSnResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).BondLotNoAndSn(inValue);
+            return retVal.Body.BondLotNoAndSnResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.BondLotNoAndSnResponse> Sfc.TestDataCollection.TestDataCollectionSoap.BondLotNoAndSnAsync(Sfc.TestDataCollection.BondLotNoAndSnRequest request)
         {
             return base.Channel.BondLotNoAndSnAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.BondLotNoAndSnResponse> BondLotNoAndSnAsync(string lotNo, string sn, string procedure)
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.BondLotNoAndSnResponse> BondLotNoAndSnAsync(string lotNo, string sn, string procedure)
         {
-            ServiceReference1.BondLotNoAndSnRequest inValue = new ServiceReference1.BondLotNoAndSnRequest();
-            inValue.Body = new ServiceReference1.BondLotNoAndSnRequestBody();
+            Sfc.TestDataCollection.BondLotNoAndSnRequest inValue = new Sfc.TestDataCollection.BondLotNoAndSnRequest();
+            inValue.Body = new Sfc.TestDataCollection.BondLotNoAndSnRequestBody();
             inValue.Body.lotNo = lotNo;
             inValue.Body.sn = sn;
             inValue.Body.procedure = procedure;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).BondLotNoAndSnAsync(inValue);
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).BondLotNoAndSnAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.BondLotNoAndSnOldResponse> ServiceReference1.TestDataCollectionSoap.BondLotNoAndSnOldAsync(ServiceReference1.BondLotNoAndSnOldRequest request)
+        Sfc.TestDataCollection.BondLotNoAndSnOldResponse Sfc.TestDataCollection.TestDataCollectionSoap.BondLotNoAndSnOld(Sfc.TestDataCollection.BondLotNoAndSnOldRequest request)
+        {
+            return base.Channel.BondLotNoAndSnOld(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo BondLotNoAndSnOld(string lotNo, string sn, string procedure)
+        {
+            Sfc.TestDataCollection.BondLotNoAndSnOldRequest inValue = new Sfc.TestDataCollection.BondLotNoAndSnOldRequest();
+            inValue.Body = new Sfc.TestDataCollection.BondLotNoAndSnOldRequestBody();
+            inValue.Body.lotNo = lotNo;
+            inValue.Body.sn = sn;
+            inValue.Body.procedure = procedure;
+            Sfc.TestDataCollection.BondLotNoAndSnOldResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).BondLotNoAndSnOld(inValue);
+            return retVal.Body.BondLotNoAndSnOldResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.BondLotNoAndSnOldResponse> Sfc.TestDataCollection.TestDataCollectionSoap.BondLotNoAndSnOldAsync(Sfc.TestDataCollection.BondLotNoAndSnOldRequest request)
         {
             return base.Channel.BondLotNoAndSnOldAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.BondLotNoAndSnOldResponse> BondLotNoAndSnOldAsync(string lotNo, string sn, string procedure)
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.BondLotNoAndSnOldResponse> BondLotNoAndSnOldAsync(string lotNo, string sn, string procedure)
         {
-            ServiceReference1.BondLotNoAndSnOldRequest inValue = new ServiceReference1.BondLotNoAndSnOldRequest();
-            inValue.Body = new ServiceReference1.BondLotNoAndSnOldRequestBody();
+            Sfc.TestDataCollection.BondLotNoAndSnOldRequest inValue = new Sfc.TestDataCollection.BondLotNoAndSnOldRequest();
+            inValue.Body = new Sfc.TestDataCollection.BondLotNoAndSnOldRequestBody();
             inValue.Body.lotNo = lotNo;
             inValue.Body.sn = sn;
             inValue.Body.procedure = procedure;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).BondLotNoAndSnOldAsync(inValue);
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).BondLotNoAndSnOldAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.EndTestDataTransferResponse> ServiceReference1.TestDataCollectionSoap.EndTestDataTransferAsync(ServiceReference1.EndTestDataTransferRequest request)
+        Sfc.TestDataCollection.EndTestDataTransferResponse Sfc.TestDataCollection.TestDataCollectionSoap.EndTestDataTransfer(Sfc.TestDataCollection.EndTestDataTransferRequest request)
+        {
+            return base.Channel.EndTestDataTransfer(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo EndTestDataTransfer(string dataString, int type)
+        {
+            Sfc.TestDataCollection.EndTestDataTransferRequest inValue = new Sfc.TestDataCollection.EndTestDataTransferRequest();
+            inValue.Body = new Sfc.TestDataCollection.EndTestDataTransferRequestBody();
+            inValue.Body.dataString = dataString;
+            inValue.Body.type = type;
+            Sfc.TestDataCollection.EndTestDataTransferResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).EndTestDataTransfer(inValue);
+            return retVal.Body.EndTestDataTransferResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.EndTestDataTransferResponse> Sfc.TestDataCollection.TestDataCollectionSoap.EndTestDataTransferAsync(Sfc.TestDataCollection.EndTestDataTransferRequest request)
         {
             return base.Channel.EndTestDataTransferAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.EndTestDataTransferResponse> EndTestDataTransferAsync(string dataString, int type)
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.EndTestDataTransferResponse> EndTestDataTransferAsync(string dataString, int type)
         {
-            ServiceReference1.EndTestDataTransferRequest inValue = new ServiceReference1.EndTestDataTransferRequest();
-            inValue.Body = new ServiceReference1.EndTestDataTransferRequestBody();
+            Sfc.TestDataCollection.EndTestDataTransferRequest inValue = new Sfc.TestDataCollection.EndTestDataTransferRequest();
+            inValue.Body = new Sfc.TestDataCollection.EndTestDataTransferRequestBody();
             inValue.Body.dataString = dataString;
             inValue.Body.type = type;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).EndTestDataTransferAsync(inValue);
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).EndTestDataTransferAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.BondSensorIdResponse> ServiceReference1.TestDataCollectionSoap.BondSensorIdAsync(ServiceReference1.BondSensorIdRequest request)
+        Sfc.TestDataCollection.BondSensorIdResponse Sfc.TestDataCollection.TestDataCollectionSoap.BondSensorId(Sfc.TestDataCollection.BondSensorIdRequest request)
+        {
+            return base.Channel.BondSensorId(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo BondSensorId(string sn, string sensorId, string procedure)
+        {
+            Sfc.TestDataCollection.BondSensorIdRequest inValue = new Sfc.TestDataCollection.BondSensorIdRequest();
+            inValue.Body = new Sfc.TestDataCollection.BondSensorIdRequestBody();
+            inValue.Body.sn = sn;
+            inValue.Body.sensorId = sensorId;
+            inValue.Body.procedure = procedure;
+            Sfc.TestDataCollection.BondSensorIdResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).BondSensorId(inValue);
+            return retVal.Body.BondSensorIdResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.BondSensorIdResponse> Sfc.TestDataCollection.TestDataCollectionSoap.BondSensorIdAsync(Sfc.TestDataCollection.BondSensorIdRequest request)
         {
             return base.Channel.BondSensorIdAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.BondSensorIdResponse> BondSensorIdAsync(string sn, string sensorId, string procedure)
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.BondSensorIdResponse> BondSensorIdAsync(string sn, string sensorId, string procedure)
         {
-            ServiceReference1.BondSensorIdRequest inValue = new ServiceReference1.BondSensorIdRequest();
-            inValue.Body = new ServiceReference1.BondSensorIdRequestBody();
+            Sfc.TestDataCollection.BondSensorIdRequest inValue = new Sfc.TestDataCollection.BondSensorIdRequest();
+            inValue.Body = new Sfc.TestDataCollection.BondSensorIdRequestBody();
             inValue.Body.sn = sn;
             inValue.Body.sensorId = sensorId;
             inValue.Body.procedure = procedure;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).BondSensorIdAsync(inValue);
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).BondSensorIdAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.ValidIsCompleteResponse> ServiceReference1.TestDataCollectionSoap.ValidIsCompleteAsync(ServiceReference1.ValidIsCompleteRequest request)
+        Sfc.TestDataCollection.ValidIsCompleteResponse Sfc.TestDataCollection.TestDataCollectionSoap.ValidIsComplete(Sfc.TestDataCollection.ValidIsCompleteRequest request)
+        {
+            return base.Channel.ValidIsComplete(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo ValidIsComplete(string sensorId, string procedure)
+        {
+            Sfc.TestDataCollection.ValidIsCompleteRequest inValue = new Sfc.TestDataCollection.ValidIsCompleteRequest();
+            inValue.Body = new Sfc.TestDataCollection.ValidIsCompleteRequestBody();
+            inValue.Body.sensorId = sensorId;
+            inValue.Body.procedure = procedure;
+            Sfc.TestDataCollection.ValidIsCompleteResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).ValidIsComplete(inValue);
+            return retVal.Body.ValidIsCompleteResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.ValidIsCompleteResponse> Sfc.TestDataCollection.TestDataCollectionSoap.ValidIsCompleteAsync(Sfc.TestDataCollection.ValidIsCompleteRequest request)
         {
             return base.Channel.ValidIsCompleteAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.ValidIsCompleteResponse> ValidIsCompleteAsync(string sensorId, string procedure)
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.ValidIsCompleteResponse> ValidIsCompleteAsync(string sensorId, string procedure)
         {
-            ServiceReference1.ValidIsCompleteRequest inValue = new ServiceReference1.ValidIsCompleteRequest();
-            inValue.Body = new ServiceReference1.ValidIsCompleteRequestBody();
+            Sfc.TestDataCollection.ValidIsCompleteRequest inValue = new Sfc.TestDataCollection.ValidIsCompleteRequest();
+            inValue.Body = new Sfc.TestDataCollection.ValidIsCompleteRequestBody();
             inValue.Body.sensorId = sensorId;
             inValue.Body.procedure = procedure;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).ValidIsCompleteAsync(inValue);
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).ValidIsCompleteAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.ValidIsCompleteNewResponse> ServiceReference1.TestDataCollectionSoap.ValidIsCompleteNewAsync(ServiceReference1.ValidIsCompleteNewRequest request)
+        Sfc.TestDataCollection.ValidIsCompleteNewResponse Sfc.TestDataCollection.TestDataCollectionSoap.ValidIsCompleteNew(Sfc.TestDataCollection.ValidIsCompleteNewRequest request)
+        {
+            return base.Channel.ValidIsCompleteNew(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo ValidIsCompleteNew(string sensorId, string procedure)
+        {
+            Sfc.TestDataCollection.ValidIsCompleteNewRequest inValue = new Sfc.TestDataCollection.ValidIsCompleteNewRequest();
+            inValue.Body = new Sfc.TestDataCollection.ValidIsCompleteNewRequestBody();
+            inValue.Body.sensorId = sensorId;
+            inValue.Body.procedure = procedure;
+            Sfc.TestDataCollection.ValidIsCompleteNewResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).ValidIsCompleteNew(inValue);
+            return retVal.Body.ValidIsCompleteNewResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.ValidIsCompleteNewResponse> Sfc.TestDataCollection.TestDataCollectionSoap.ValidIsCompleteNewAsync(Sfc.TestDataCollection.ValidIsCompleteNewRequest request)
         {
             return base.Channel.ValidIsCompleteNewAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.ValidIsCompleteNewResponse> ValidIsCompleteNewAsync(string sensorId, string procedure)
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.ValidIsCompleteNewResponse> ValidIsCompleteNewAsync(string sensorId, string procedure)
         {
-            ServiceReference1.ValidIsCompleteNewRequest inValue = new ServiceReference1.ValidIsCompleteNewRequest();
-            inValue.Body = new ServiceReference1.ValidIsCompleteNewRequestBody();
+            Sfc.TestDataCollection.ValidIsCompleteNewRequest inValue = new Sfc.TestDataCollection.ValidIsCompleteNewRequest();
+            inValue.Body = new Sfc.TestDataCollection.ValidIsCompleteNewRequestBody();
             inValue.Body.sensorId = sensorId;
             inValue.Body.procedure = procedure;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).ValidIsCompleteNewAsync(inValue);
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).ValidIsCompleteNewAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.TestDataStorageResponse> ServiceReference1.TestDataCollectionSoap.TestDataStorageAsync(ServiceReference1.TestDataStorageRequest request)
+        Sfc.TestDataCollection.TestDataStorageResponse Sfc.TestDataCollection.TestDataCollectionSoap.TestDataStorage(Sfc.TestDataCollection.TestDataStorageRequest request)
         {
-            return base.Channel.TestDataStorageAsync(request);
+            return base.Channel.TestDataStorage(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.TestDataStorageResponse> TestDataStorageAsync(string testData, string sensorId, string procedure, string finallyResult, string badCode, string equipmentId)
+        public Sfc.TestDataCollection.APIBackInfo TestDataStorage(string testData, string sensorId, string procedure, string finallyResult, string badCode, string equipmentId)
         {
-            ServiceReference1.TestDataStorageRequest inValue = new ServiceReference1.TestDataStorageRequest();
-            inValue.Body = new ServiceReference1.TestDataStorageRequestBody();
+            Sfc.TestDataCollection.TestDataStorageRequest inValue = new Sfc.TestDataCollection.TestDataStorageRequest();
+            inValue.Body = new Sfc.TestDataCollection.TestDataStorageRequestBody();
             inValue.Body.testData = testData;
             inValue.Body.sensorId = sensorId;
             inValue.Body.procedure = procedure;
             inValue.Body.finallyResult = finallyResult;
             inValue.Body.badCode = badCode;
             inValue.Body.equipmentId = equipmentId;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).TestDataStorageAsync(inValue);
+            Sfc.TestDataCollection.TestDataStorageResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).TestDataStorage(inValue);
+            return retVal.Body.TestDataStorageResult;
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.TestDataStorageTestResponse> ServiceReference1.TestDataCollectionSoap.TestDataStorageTestAsync(ServiceReference1.TestDataStorageTestRequest request)
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.TestDataStorageResponse> Sfc.TestDataCollection.TestDataCollectionSoap.TestDataStorageAsync(Sfc.TestDataCollection.TestDataStorageRequest request)
+        {
+            return base.Channel.TestDataStorageAsync(request);
+        }
+        
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.TestDataStorageResponse> TestDataStorageAsync(string testData, string sensorId, string procedure, string finallyResult, string badCode, string equipmentId)
+        {
+            Sfc.TestDataCollection.TestDataStorageRequest inValue = new Sfc.TestDataCollection.TestDataStorageRequest();
+            inValue.Body = new Sfc.TestDataCollection.TestDataStorageRequestBody();
+            inValue.Body.testData = testData;
+            inValue.Body.sensorId = sensorId;
+            inValue.Body.procedure = procedure;
+            inValue.Body.finallyResult = finallyResult;
+            inValue.Body.badCode = badCode;
+            inValue.Body.equipmentId = equipmentId;
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).TestDataStorageAsync(inValue);
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        Sfc.TestDataCollection.TestDataStorageTestResponse Sfc.TestDataCollection.TestDataCollectionSoap.TestDataStorageTest(Sfc.TestDataCollection.TestDataStorageTestRequest request)
+        {
+            return base.Channel.TestDataStorageTest(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo TestDataStorageTest(string testData)
+        {
+            Sfc.TestDataCollection.TestDataStorageTestRequest inValue = new Sfc.TestDataCollection.TestDataStorageTestRequest();
+            inValue.Body = new Sfc.TestDataCollection.TestDataStorageTestRequestBody();
+            inValue.Body.testData = testData;
+            Sfc.TestDataCollection.TestDataStorageTestResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).TestDataStorageTest(inValue);
+            return retVal.Body.TestDataStorageTestResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.TestDataStorageTestResponse> Sfc.TestDataCollection.TestDataCollectionSoap.TestDataStorageTestAsync(Sfc.TestDataCollection.TestDataStorageTestRequest request)
         {
             return base.Channel.TestDataStorageTestAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.TestDataStorageTestResponse> TestDataStorageTestAsync(string testData)
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.TestDataStorageTestResponse> TestDataStorageTestAsync(string testData)
         {
-            ServiceReference1.TestDataStorageTestRequest inValue = new ServiceReference1.TestDataStorageTestRequest();
-            inValue.Body = new ServiceReference1.TestDataStorageTestRequestBody();
+            Sfc.TestDataCollection.TestDataStorageTestRequest inValue = new Sfc.TestDataCollection.TestDataStorageTestRequest();
+            inValue.Body = new Sfc.TestDataCollection.TestDataStorageTestRequestBody();
             inValue.Body.testData = testData;
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).TestDataStorageTestAsync(inValue);
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).TestDataStorageTestAsync(inValue);
         }
         
         [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<ServiceReference1.GetCraftInfoResponse> ServiceReference1.TestDataCollectionSoap.GetCraftInfoAsync(ServiceReference1.GetCraftInfoRequest request)
+        Sfc.TestDataCollection.GetCraftInfoResponse Sfc.TestDataCollection.TestDataCollectionSoap.GetCraftInfo(Sfc.TestDataCollection.GetCraftInfoRequest request)
+        {
+            return base.Channel.GetCraftInfo(request);
+        }
+        
+        public Sfc.TestDataCollection.APIBackInfo GetCraftInfo()
+        {
+            Sfc.TestDataCollection.GetCraftInfoRequest inValue = new Sfc.TestDataCollection.GetCraftInfoRequest();
+            inValue.Body = new Sfc.TestDataCollection.GetCraftInfoRequestBody();
+            Sfc.TestDataCollection.GetCraftInfoResponse retVal = ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).GetCraftInfo(inValue);
+            return retVal.Body.GetCraftInfoResult;
+        }
+        
+        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+        System.Threading.Tasks.Task<Sfc.TestDataCollection.GetCraftInfoResponse> Sfc.TestDataCollection.TestDataCollectionSoap.GetCraftInfoAsync(Sfc.TestDataCollection.GetCraftInfoRequest request)
         {
             return base.Channel.GetCraftInfoAsync(request);
         }
         
-        public System.Threading.Tasks.Task<ServiceReference1.GetCraftInfoResponse> GetCraftInfoAsync()
+        public System.Threading.Tasks.Task<Sfc.TestDataCollection.GetCraftInfoResponse> GetCraftInfoAsync()
         {
-            ServiceReference1.GetCraftInfoRequest inValue = new ServiceReference1.GetCraftInfoRequest();
-            inValue.Body = new ServiceReference1.GetCraftInfoRequestBody();
-            return ((ServiceReference1.TestDataCollectionSoap)(this)).GetCraftInfoAsync(inValue);
+            Sfc.TestDataCollection.GetCraftInfoRequest inValue = new Sfc.TestDataCollection.GetCraftInfoRequest();
+            inValue.Body = new Sfc.TestDataCollection.GetCraftInfoRequestBody();
+            return ((Sfc.TestDataCollection.TestDataCollectionSoap)(this)).GetCraftInfoAsync(inValue);
         }
         
         public virtual System.Threading.Tasks.Task OpenAsync()

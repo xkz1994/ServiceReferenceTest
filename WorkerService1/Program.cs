@@ -1,5 +1,5 @@
-using ServiceReference1;
-using WorkerService1;
+using ServiceReferenceTest;
+using Sfc.TestDataCollection;
 
 IHost host = Host.CreateDefaultBuilder(args)
     .ConfigureServices(services =>
