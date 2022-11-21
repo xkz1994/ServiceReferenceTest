@@ -11,7 +11,7 @@ IHost host = Host.CreateDefaultBuilder(args)
         // services.AddSingleton<TestDataCollectionSoap>(
         //     new TestDataCollectionSoapClient(
         //         TestDataCollectionSoapClient.EndpointConfiguration.TestDataCollectionSoap12, "http://localhost:36871/WebService/TestDataCollection.asmx"));
-        services.AddSingleton<WlgManagement>(
+        services.AddSingleton(
             new WlgManagementClient(WlgManagementClient.EndpointConfiguration.WlgManagementPort));
         services.AddHostedService<Worker>();
     })
